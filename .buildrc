@@ -1,0 +1,13 @@
+{
+    version: 1.0,
+    packages:
+        [
+            {
+                type: image,
+                lang: docker,
+                name: golang-lambda-otel,
+                file: images/golang-lambda-otel/Dockerfile,
+                base: images/golang-lambda-otel,
+            },
+        ],
+}

@@ -1,0 +1,76 @@
+{
+	"folders": [
+		{
+			"path": "..",
+			"name": "root"
+		},
+	],
+	"settings": {
+		"workbench.tree.indent": 16,
+		"yaml.format.enable": true,
+		"editor.formatOnSave": true,
+		"search.useIgnoreFiles": true,
+		"terraform.codelens.referenceCount": false,
+		"terraform.languageServer.enable": true,
+		"terraform.experimentalFeatures.validateOnSave": true,
+		"files.exclude": {
+			"terraform/": true,
+			// "core/": true,
+			// "modules/": true,
+			".plan": true,
+		},
+		"files.associations": {
+			".buildrc": "yaml",
+		},
+		"[terraform]": {
+			"editor.defaultFormatter": "hashicorp.terraform-preview",
+			"editor.formatOnSave": false,
+			"editor.codeActionsOnSave": {
+				"source.formatAll.terraform": false
+			},
+		},
+		"[terraform-vars]": {
+			"editor.defaultFormatter": "hashicorp.terraform-preview",
+			"editor.formatOnSave": false,
+			"editor.codeActionsOnSave": {
+				"source.formatAll.terraform": true
+			},
+		},
+		"material-icon-theme.folders.associations": {
+			"dynamo": "database",
+			"mw": "middleware",
+			"ecs": "container",
+			"logs": "batch",
+			"blocks": "queue",
+			"structure": "database",
+			"events": "api",
+			"integrity": "admin",
+		},
+		"emeraldwalk.runonsave": {
+			"commands": [
+				{
+					"match": "\\.tf$|\\.tfvars$|\\.hcl$|\\.hclvars$",
+					"cmd": "terraform fmt \"${file}\" && sed -e':a' -e's/^\\(\\t*\\)  /\\1\\t/;ta' \"${file}\" > \"${file}\"-notab && mv \"${file}\"-notab \"${file}\""
+				},
+			]
+		},
+		"go.testTimeout": "90s",
+		"debug.console.wordWrap": false,
+		"[yaml]": {
+			"editor.defaultFormatter": "redhat.vscode-yaml",
+			"editor.bracketPairColorization.enabled": true,
+			"editor.formatOnSave": true,
+		},
+		"yaml.style.flowSequence": "allow",
+		"yaml.style.flowMapping": "allow",
+		"yaml.format.proseWrap": "preserve",
+		"yaml.format.singleQuote": false,
+		"yaml.extension.recommendations": true,
+		"yaml.schemas": {
+			"https://json.schemastore.org/github-action.json": [
+				"file:///Users/dub6ix/Developer/nuggxyz/backend-superproject/ci/.github/actions/upload-pkg.yaml",
+				"file:///Users/dub6ix/Developer/nuggxyz/backend-superproject/ci/.github/actions/go-cache-modules.yaml"
+			]
+		}
+	}
+}
