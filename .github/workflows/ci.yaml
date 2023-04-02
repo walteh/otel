@@ -1,0 +1,18 @@
+{
+  on: { push: { branches: [main] } },
+  jobs:
+    {
+      abc:
+        {
+          runs-on: ubuntu-latest,
+          steps:
+            [
+              {
+                id: "ci",
+                uses: nuggxyz/ci/.github/workflows/ci.yaml@main,
+                with: { secrets: inherit },
+              },
+            ],
+        },
+    },
+}
