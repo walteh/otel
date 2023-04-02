@@ -4,15 +4,9 @@
     {
       abc:
         {
-          runs-on: ubuntu-latest,
-          steps:
-            [
-              {
-                id: "ci",
-                uses: nuggxyz/ci/.github/workflows/ci.yaml@main,
-                with: { secrets: inherit },
-              },
-            ],
+          uses: nuggxyz/ci/.github/workflows/ci.yaml@main,
+          with: { buildrc: .buildrc },
+          secrets: inherit,
         },
     },
 }
