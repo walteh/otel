@@ -5,9 +5,9 @@
             {
                 type: image,
                 lang: docker,
-                name: golang-lambda-otel,
-                file: images/golang-lambda-otel/Dockerfile,
-                base: images/golang-lambda-otel,
+                name: lambda-go-collector,
+                file: images/lambda-go-collector/Dockerfile,
+                base: images/lambda-go-collector,
             },
         ],
 }
