@@ -5,7 +5,6 @@
       ci:
         {
           uses: nuggxyz/ci/.github/workflows/ci.yaml@main,
-          with: { buildrc: .buildrc },
           secrets: inherit,
           permissions: { contents: write, packages: write, id-token: write },
         },
