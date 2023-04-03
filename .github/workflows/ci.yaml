@@ -1,5 +1,6 @@
 {
   on: { push: null },
+  name: ci,
   jobs:
     {
       ci:
