@@ -12,4 +12,6 @@ export url="$(aws lambda get-layer-version-by-arn --arn "$arn" --query 'Content.
 
 curl "$url" --output layer.zip
 
+mkdir -p "./build/${OS}-${ARCH}"
+
 unzip layer.zip -d "./build/${OS}-${ARCH}"
