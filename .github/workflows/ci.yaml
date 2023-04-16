@@ -1,6 +1,8 @@
 {
   on: { push: null },
   name: ci,
+  permissions:
+    { id-token: write, contents: write, packages: write, actions: write },
   jobs:
     {
       ci:
@@ -17,4 +19,3 @@
         },
     },
 }
-
