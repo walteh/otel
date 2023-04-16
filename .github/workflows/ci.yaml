@@ -7,8 +7,13 @@
         {
           uses: nuggxyz/ci/.github/workflows/ci.yaml@main,
           secrets: inherit,
-          permissions: { contents: write, packages: write, id-token: write },
+          permissions:
+            {
+              contents: write,
+              packages: write,
+              id-token: write,
+              actions: write,
+            },
         },
-    
-        },
+    },
 }
