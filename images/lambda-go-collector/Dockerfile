@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:experimental
 
-FROM golang:1:20 as builder
+FROM golang:1.20 as builder
 
 COPY ./build /build
 
