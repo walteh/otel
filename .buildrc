@@ -9,7 +9,7 @@
                 name: lambda-go-collector,
                 file: images/lambda-go-collector/Dockerfile,
                 dockerfile: images/lambda-go-collector/Dockerfile,
+                platforms: [linux/arm64],
             },
-            
         ],
 }
