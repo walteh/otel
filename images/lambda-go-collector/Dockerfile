@@ -25,7 +25,7 @@ RUN export AWS_DEFAULT_REGION="us-east-1" && \
 RUN unzip layer.zip -d /opt
 RUN rm layer.zip
 
-FROM alpine:latest
+FROM scratch
 
 COPY --from=builder /opt /opt
 

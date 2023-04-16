@@ -8,7 +8,7 @@
                 lang: docker,
                 name: lambda-go-collector,
                 file: images/lambda-go-collector/Dockerfile,
-                base: images/lambda-go-collector,
+                dockerfile: images/lambda-go-collector/Dockerfile,
             },
         ],
 }
