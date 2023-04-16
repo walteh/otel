@@ -10,5 +10,6 @@
                 file: images/lambda-go-collector/Dockerfile,
                 dockerfile: images/lambda-go-collector/Dockerfile,
             },
+            
         ],
 }
