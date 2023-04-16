@@ -14,4 +14,4 @@ curl "$url" --output layer.zip
 
 mkdir -p "./build/${OS}-${ARCH}"
 
-unzip layer.zip -d "./build/${OS}-${ARCH}"
+unzip -FF layer.zip -d "./build/${OS}-${ARCH}"
