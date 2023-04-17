@@ -6,11 +6,11 @@
             {
                 type: image,
                 lang: docker,
-                name: lambda-go-collector,
-                entry: images/lambda-go-collector/Dockerfile,
-                dockerfile: images/lambda-go-collector/Dockerfile,
+                name: lambda-collector,
+                entry: lambda-collector/Dockerfile,
+                dockerfile: lambda-collector/Dockerfile,
                 platforms: [linux/arm64, linux/amd64],
-                prebuild_hook: images/lambda-go-collector/prebuild.sh,
+                prebuild_hook: lambda-collector/prebuild.sh,
             },
         ],
 }
