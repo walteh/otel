@@ -1,13 +1,7 @@
 #!/bin/bash -e
 
-if [ $# -ne 3 ]; then
-    echo "Usage: $0 <ENTRY> <OS> <ARCH>"
-    exit 1
-fi
-
-ENTRY=$1
-OS=$2
-ARCH=$3
+OS=$(go env GOOS)
+ARCH=$(go env GOARCH)
 REGION="us-east-1"
 
 export AWS_DEFAULT_REGION="${REGION}"
