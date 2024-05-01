@@ -64,14 +64,14 @@
 			"editor.defaultFormatter": "hashicorp.terraform-preview",
 			"editor.formatOnSave": false,
 			"editor.codeActionsOnSave": {
-				"source.formatAll.terraform": false
+				"source.formatAll.terraform": "never"
 			},
 		},
 		"[terraform-vars]": {
 			"editor.defaultFormatter": "hashicorp.terraform-preview",
 			"editor.formatOnSave": false,
 			"editor.codeActionsOnSave": {
-				"source.formatAll.terraform": true
+				"source.formatAll.terraform": "explicit"
 			},
 		},
 		"emeraldwalk.runonsave": {
